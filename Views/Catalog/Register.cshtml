@@ -1,0 +1,84 @@
+@{
+ViewData["Title"] = "Register Car";
+}
+<h3> Register new car</h3>
+
+<div class="col-md-6 offset-md-3">
+    <form>
+        <div class="form-group row">
+            <label for="selCondition" class="col-4 col-form-label">Condition</label>
+            <div class="col-8">
+                <select id="selCondition" name="selCondition" class="custom-select" required="required">
+                    <option value="new">New</option>
+                    <option value="used">Used</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="txtMake" class="col-4 col-form-label">Make</label>
+            <div class="col-8">
+                <input id="txtMake" name="txtMake" type="text" class="form-control" required="required">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="txtModel" class="col-4 col-form-label">Model</label>
+            <div class="col-8">
+                <input id="txtModel" name="txtModel" type="text" class="form-control" required="required">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="txtYear" class="col-4 col-form-label">Year</label>
+            <div class="col-8">
+                <input id="txtYear" name="txtYear" type="number" class="form-control" required="required">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="txtColor" class="col-4 col-form-label">Color</label>
+            <div class="col-8">
+                <input id="txtColor" name="txtColor" type="text" class="form-control" required="required">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="txtPrice" class="col-4 col-form-label">Price</label>
+            <div class="col-8">
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <i class="fa fa-dollar"></i>
+                        </div>
+                    </div>
+                    <input id="txtPrice" name="txtPrice" type="number" required="required" class="form-control">
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="txtMpg" class="col-4 col-form-label">MPG</label>
+            <div class="col-8">
+                <input id="txtMpg" name="txtMpg" type="number" required="required" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="txtMileage" class="col-4 col-form-label">Mileage</label>
+            <div class="col-8">
+                <input id="txtMileage" name="txtMileage" type="number" class="form-control" required="required">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="text" class="col-4 col-form-label">Image Url</label>
+            <div class="col-8">
+                <input id="txtImage" name="text" type="text" class="form-control">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="offset-4 col-8">
+                <button name="submit" id="btnSave" type="button" class="btn btn-primary"><i class="fa fa-save"></i> Register
+                    Car</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+
+@section Scripts {
+    <script src="/js/register.js"></script>
+}

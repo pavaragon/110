@@ -1,0 +1,30 @@
+.item {
+    border:1px solid lightgray;
+    display: flex;
+    border-radius: 5px;
+    margin: 10px;
+    display: inline-block;
+    max-width: 50%;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto; 
+}
+
+h3{
+    margin: 0;
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.btn-dark{
+    width: 100%;
+}
